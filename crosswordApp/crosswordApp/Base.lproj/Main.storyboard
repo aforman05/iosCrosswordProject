@@ -60,6 +60,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="A3Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="6TZ-ug-QQA"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cmm-fj-UYH">
                                         <rect key="frame" x="225" y="0.0" width="75" height="75"/>
@@ -69,6 +72,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="A4Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="u49-1l-RvF"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGU-B2-FqA">
                                         <rect key="frame" x="300" y="0.0" width="75" height="75"/>
@@ -78,6 +84,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="A5Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="Kkx-iW-DE6"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -92,6 +101,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="B1Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="Oo4-bx-Ina"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Twr-D7-1Xd">
                                         <rect key="frame" x="75" y="0.0" width="75" height="75"/>
@@ -101,6 +113,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="B2Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="2vA-Df-ae9"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJi-75-AQq">
                                         <rect key="frame" x="150" y="0.0" width="75" height="75"/>
@@ -110,6 +125,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="B3Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="drV-yQ-2yr"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0v-si-Cax">
                                         <rect key="frame" x="225" y="0.0" width="75" height="75"/>
@@ -119,6 +137,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="B4Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="fuY-u3-Y1Q"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaN-s6-cPf">
                                         <rect key="frame" x="300" y="0.0" width="75" height="75"/>
@@ -128,10 +149,13 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="B5Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="T6o-h7-A7D"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jc1-jX-Rj4">
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jc1-jX-Rj4">
                                 <rect key="frame" x="9" y="209" width="375" height="75"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pl9-vK-uTR">
@@ -142,6 +166,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="C1Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="Gok-EM-h1u"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IsH-Rc-gRs">
                                         <rect key="frame" x="75" y="0.0" width="75" height="75"/>
@@ -151,6 +178,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="C2Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="Du6-Wc-gWV"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ktq-bg-9l3">
                                         <rect key="frame" x="150" y="0.0" width="75" height="75"/>
@@ -160,6 +190,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="C3Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="2pb-9t-Gal"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gql-Wk-CNZ">
                                         <rect key="frame" x="225" y="0.0" width="75" height="75"/>
@@ -169,6 +202,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="C4Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="neY-NY-sa6"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I87-Pf-Vmi">
                                         <rect key="frame" x="300" y="0.0" width="75" height="75"/>
@@ -178,10 +214,13 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="C5Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="42O-QG-rWe"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Y9-po-xfs">
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Y9-po-xfs">
                                 <rect key="frame" x="9" y="284" width="375" height="75"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jqr-ad-d4K">
@@ -192,6 +231,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="D1Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="cZ7-vP-Par"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j8l-Bd-8SU">
                                         <rect key="frame" x="75" y="0.0" width="75" height="75"/>
@@ -201,6 +243,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="D2Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="RbM-Im-SHT"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Uy-Uo-4SR">
                                         <rect key="frame" x="150" y="0.0" width="75" height="75"/>
@@ -210,6 +255,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="D3Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="17V-NN-2lU"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNE-if-2Vg">
                                         <rect key="frame" x="225" y="0.0" width="75" height="75"/>
@@ -219,6 +267,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="D4Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="HFc-ii-FAy"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0UL-Bz-8h8">
                                         <rect key="frame" x="300" y="0.0" width="75" height="75"/>
@@ -228,10 +279,13 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="D5Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="DhY-ev-IW9"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ta-p8-0Vo">
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ta-p8-0Vo">
                                 <rect key="frame" x="9" y="359" width="375" height="75"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="As9-hz-Hq0">
@@ -242,6 +296,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="E1Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="Yih-2s-WRf"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3qh-ZT-tiK">
                                         <rect key="frame" x="75" y="0.0" width="75" height="75"/>
@@ -251,6 +308,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="E2Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="UOx-zt-Ne4"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="awF-Bn-v0n">
                                         <rect key="frame" x="150" y="0.0" width="75" height="75"/>
@@ -260,6 +320,9 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
+                                        <connections>
+                                            <action selector="E3Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="bjR-So-D6o"/>
+                                        </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black" translatesAutoresizingMaskIntoConstraints="NO" id="fOT-4W-ghU">
                                         <rect key="frame" x="225" y="0.0" width="75" height="75"/>
@@ -285,39 +348,84 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usa-vi-XYj">
-                                <rect key="frame" x="269" y="442" width="56" height="35"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usa-vi-XYj">
+                                <rect key="frame" x="233" y="442" width="62" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="gp6-YJ-Cbe"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Hint"/>
+                                <connections>
+                                    <action selector="hintBtnClicked:" destination="ggg-ho-0YY" eventType="touchUpInside" id="OMc-wn-M7z"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsq-o6-Snu">
+                                <rect key="frame" x="60" y="449" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HQ5-zV-VNb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="HQ5-zV-VNb" firstAttribute="trailing" secondItem="Qwf-iF-uiC" secondAttribute="trailing" constant="9" id="20x-0J-hn2"/>
                             <constraint firstItem="Qwf-iF-uiC" firstAttribute="bottom" secondItem="HQ5-zV-VNb" secondAttribute="bottom" id="5I3-gg-BbN"/>
+                            <constraint firstItem="HQ5-zV-VNb" firstAttribute="trailing" secondItem="0ta-p8-0Vo" secondAttribute="trailing" constant="9" id="6S1-XU-yJq"/>
                             <constraint firstItem="EzN-yG-KS8" firstAttribute="leading" secondItem="HQ5-zV-VNb" secondAttribute="leading" constant="9" id="BFq-38-Mu4"/>
+                            <constraint firstItem="Usa-vi-XYj" firstAttribute="leading" secondItem="Tsq-o6-Snu" secondAttribute="trailing" constant="127" id="DjF-IX-wEo"/>
                             <constraint firstItem="JDL-zR-p5j" firstAttribute="top" secondItem="EzN-yG-KS8" secondAttribute="bottom" id="Efc-5M-00a"/>
                             <constraint firstItem="HQ5-zV-VNb" firstAttribute="trailing" secondItem="JDL-zR-p5j" secondAttribute="trailing" constant="9" id="JeW-L2-iDl"/>
-                            <constraint firstItem="Usa-vi-XYj" firstAttribute="leading" secondItem="HQ5-zV-VNb" secondAttribute="leading" constant="269" id="LiS-Js-ZIb"/>
+                            <constraint firstItem="Tsq-o6-Snu" firstAttribute="leading" secondItem="HQ5-zV-VNb" secondAttribute="leading" constant="60" id="Jng-DL-LuJ"/>
+                            <constraint firstItem="HQ5-zV-VNb" firstAttribute="trailing" secondItem="Usa-vi-XYj" secondAttribute="trailing" constant="98" id="Kih-dj-KWe"/>
+                            <constraint firstItem="HQ5-zV-VNb" firstAttribute="trailing" secondItem="Jc1-jX-Rj4" secondAttribute="trailing" constant="9" id="Oum-Qi-HVa"/>
                             <constraint firstItem="Jc1-jX-Rj4" firstAttribute="top" secondItem="JDL-zR-p5j" secondAttribute="bottom" id="PDY-aJ-IWs"/>
+                            <constraint firstItem="Qwf-iF-uiC" firstAttribute="top" secondItem="Tsq-o6-Snu" secondAttribute="bottom" constant="15" id="Y7d-8y-JI1"/>
                             <constraint firstItem="Qwf-iF-uiC" firstAttribute="leading" secondItem="HQ5-zV-VNb" secondAttribute="leading" constant="9" id="Zrp-oe-6YR"/>
+                            <constraint firstItem="HQ5-zV-VNb" firstAttribute="trailing" secondItem="0Y9-po-xfs" secondAttribute="trailing" constant="9" id="bjV-dQ-OrD"/>
+                            <constraint firstItem="Jc1-jX-Rj4" firstAttribute="leading" secondItem="HQ5-zV-VNb" secondAttribute="leading" constant="9" id="bm9-hY-wnd"/>
                             <constraint firstItem="EzN-yG-KS8" firstAttribute="top" secondItem="HQ5-zV-VNb" secondAttribute="top" id="cfS-4G-fXe"/>
                             <constraint firstAttribute="trailing" secondItem="EzN-yG-KS8" secondAttribute="trailing" constant="9" id="cpU-rJ-cQu"/>
+                            <constraint firstItem="0Y9-po-xfs" firstAttribute="leading" secondItem="HQ5-zV-VNb" secondAttribute="leading" constant="9" id="ed5-uX-29i"/>
                             <constraint firstItem="Usa-vi-XYj" firstAttribute="top" secondItem="0ta-p8-0Vo" secondAttribute="bottom" constant="8" symbolic="YES" id="g3g-Z6-GA3"/>
                             <constraint firstItem="0ta-p8-0Vo" firstAttribute="top" secondItem="0Y9-po-xfs" secondAttribute="bottom" id="mN7-Ml-3l7"/>
+                            <constraint firstItem="Tsq-o6-Snu" firstAttribute="top" secondItem="0ta-p8-0Vo" secondAttribute="bottom" constant="15" id="nvK-L4-ngU"/>
+                            <constraint firstItem="0ta-p8-0Vo" firstAttribute="leading" secondItem="HQ5-zV-VNb" secondAttribute="leading" constant="9" id="qxk-3T-OFI"/>
                             <constraint firstItem="Qwf-iF-uiC" firstAttribute="top" secondItem="Usa-vi-XYj" secondAttribute="bottom" constant="8" symbolic="YES" id="tZ6-Kc-bbj"/>
                             <constraint firstItem="0Y9-po-xfs" firstAttribute="top" secondItem="Jc1-jX-Rj4" secondAttribute="bottom" id="u8B-5Y-9Qd"/>
                             <constraint firstItem="JDL-zR-p5j" firstAttribute="leading" secondItem="HQ5-zV-VNb" secondAttribute="leading" constant="9" id="vpu-2j-n5u"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="A3" destination="wbf-KH-KqB" id="rZa-AJ-Q4c"/>
+                        <outlet property="A4" destination="cmm-fj-UYH" id="k0i-9y-W1P"/>
+                        <outlet property="A5" destination="mGU-B2-FqA" id="ikM-kK-939"/>
+                        <outlet property="B1" destination="9x4-4Q-uhr" id="k7b-uw-jNF"/>
+                        <outlet property="B2" destination="Twr-D7-1Xd" id="2kE-jM-89Q"/>
+                        <outlet property="B3" destination="jJi-75-AQq" id="kL7-aX-DRB"/>
+                        <outlet property="B4" destination="n0v-si-Cax" id="PMZ-OI-yrt"/>
+                        <outlet property="B5" destination="RaN-s6-cPf" id="3yo-FS-l1J"/>
+                        <outlet property="C1" destination="Pl9-vK-uTR" id="tR4-or-4Yb"/>
+                        <outlet property="C2" destination="IsH-Rc-gRs" id="baB-73-MQ7"/>
+                        <outlet property="C3" destination="ktq-bg-9l3" id="JRq-U5-wzN"/>
+                        <outlet property="C4" destination="gql-Wk-CNZ" id="TrJ-pY-epa"/>
+                        <outlet property="C5" destination="I87-Pf-Vmi" id="Yh9-zM-Suc"/>
+                        <outlet property="D1" destination="jqr-ad-d4K" id="QPf-FL-3ft"/>
+                        <outlet property="D2" destination="j8l-Bd-8SU" id="Wz4-t5-GSz"/>
+                        <outlet property="D3" destination="0Uy-Uo-4SR" id="AmF-gC-D01"/>
+                        <outlet property="D4" destination="vNE-if-2Vg" id="r2j-ZN-MhJ"/>
+                        <outlet property="D5" destination="0UL-Bz-8h8" id="IRi-yh-ydB"/>
+                        <outlet property="E1" destination="As9-hz-Hq0" id="W6a-Mf-PFF"/>
+                        <outlet property="E2" destination="3qh-ZT-tiK" id="B2T-IE-r0I"/>
+                        <outlet property="E3" destination="awF-Bn-v0n" id="vLJ-b7-UDO"/>
+                        <outlet property="cluesOL" destination="Qwf-iF-uiC" id="8YX-56-iiN"/>
+                        <outlet property="hintOL" destination="Usa-vi-XYj" id="nvL-oZ-kph"/>
+                        <outlet property="timerOL" destination="Tsq-o6-Snu" id="Xhx-cB-cWo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oag-al-w2H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2700" y="33.802816901408455"/>
+            <point key="canvasLocation" x="2996.1832061068703" y="22.535211267605636"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="kRi-ix-1j2">
