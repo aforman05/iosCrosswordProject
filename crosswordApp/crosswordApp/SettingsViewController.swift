@@ -32,6 +32,7 @@ class SettingsViewController: UIViewController {
         //create a boolean which disables popups from occuring, providing feedback and/or positive reinforcement
     }
     
+    @IBOutlet weak var settingsIntroOL: UILabel!
     
     
     
