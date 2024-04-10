@@ -427,6 +427,74 @@
             </objects>
             <point key="canvasLocation" x="2996.1832061068703" y="22.535211267605636"/>
         </scene>
+        <!--Stats View Controller-->
+        <scene sceneID="YvK-qn-ah2">
+            <objects>
+                <viewController id="FFi-JX-j6D" userLabel="Stats View Controller" customClass="StatsViewController" customModule="crosswordApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WRX-FB-uDg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Stats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoa-oh-TyC">
+                                <rect key="frame" x="151.33333333333331" y="70" width="90.333333333333343" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="8lC-xf-G43"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, &quot;Chase&quot;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRo-e8-1PH">
+                                <rect key="frame" x="126.66666666666669" y="149" width="140" height="54"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hints Used:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F00-TQ-nt2">
+                                <rect key="frame" x="45" y="330" width="106" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puzzles Completed:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G1P-Ml-pz0">
+                                <rect key="frame" x="44.999999999999986" y="279" width="181.66666666666663" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGq-Zk-61B">
+                                <rect key="frame" x="45" y="228" width="100" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jsF-Ju-9aK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F00-TQ-nt2" firstAttribute="top" secondItem="G1P-Ml-pz0" secondAttribute="bottom" constant="25" id="5yj-rj-XS9"/>
+                            <constraint firstItem="G1P-Ml-pz0" firstAttribute="top" secondItem="ZGq-Zk-61B" secondAttribute="bottom" constant="25" id="JBy-Of-KD0"/>
+                            <constraint firstItem="cRo-e8-1PH" firstAttribute="centerX" secondItem="WRX-FB-uDg" secondAttribute="centerX" id="JmI-ph-XKA"/>
+                            <constraint firstItem="cRo-e8-1PH" firstAttribute="top" secondItem="yoa-oh-TyC" secondAttribute="bottom" constant="30" id="PCV-p6-Li9"/>
+                            <constraint firstItem="G1P-Ml-pz0" firstAttribute="leading" secondItem="jsF-Ju-9aK" secondAttribute="leading" constant="45" id="QMR-rn-QhS"/>
+                            <constraint firstItem="ZGq-Zk-61B" firstAttribute="leading" secondItem="jsF-Ju-9aK" secondAttribute="leading" constant="45" id="fqz-L6-M6r"/>
+                            <constraint firstItem="ZGq-Zk-61B" firstAttribute="top" secondItem="cRo-e8-1PH" secondAttribute="bottom" constant="25" id="gHb-sm-zVS"/>
+                            <constraint firstItem="F00-TQ-nt2" firstAttribute="leading" secondItem="jsF-Ju-9aK" secondAttribute="leading" constant="45" id="iNA-8V-7ZH"/>
+                            <constraint firstItem="yoa-oh-TyC" firstAttribute="top" secondItem="jsF-Ju-9aK" secondAttribute="top" constant="11" id="nKD-Bt-bgV"/>
+                            <constraint firstItem="ZGq-Zk-61B" firstAttribute="top" secondItem="WRX-FB-uDg" secondAttribute="top" constant="228" id="tYq-Ay-aCv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hintsOL" destination="F00-TQ-nt2" id="75a-Sd-AaQ"/>
+                        <outlet property="puzzlesCompletedOL" destination="G1P-Ml-pz0" id="Wro-Ya-Awj"/>
+                        <outlet property="timeOL" destination="ZGq-Zk-61B" id="qoB-v8-z0M"/>
+                        <outlet property="welcomeOL" destination="cRo-e8-1PH" id="34h-zd-LgA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWd-Bt-Auu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1927.4809160305342" y="22.535211267605636"/>
+        </scene>
         <!--Settings View Controller-->
         <scene sceneID="kRi-ix-1j2">
             <objects>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146694F42BC7200400B3629E /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146694F32BC7200400B3629E /* StatsViewController.swift */; };
 		39B4658C2BBEF5970070F6A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4658B2BBEF5970070F6A6 /* AppDelegate.swift */; };
 		39B4658E2BBEF5970070F6A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4658D2BBEF5970070F6A6 /* SceneDelegate.swift */; };
 		39B465902BBEF5970070F6A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B4658F2BBEF5970070F6A6 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		146694F32BC7200400B3629E /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		39B465882BBEF5970070F6A6 /* crosswordApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crosswordApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B4658B2BBEF5970070F6A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39B4658D2BBEF5970070F6A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				39B465962BBEF5A40070F6A6 /* LaunchScreen.storyboard */,
 				39B465992BBEF5A40070F6A6 /* Info.plist */,
 				E28DC22C2BBF22DA00C04BC6 /* SettingsViewController.swift */,
+				146694F32BC7200400B3629E /* StatsViewController.swift */,
 			);
 			path = crosswordApp;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				39B465902BBEF5970070F6A6 /* ViewController.swift in Sources */,
 				39B4658C2BBEF5970070F6A6 /* AppDelegate.swift in Sources */,
 				39B4658E2BBEF5970070F6A6 /* SceneDelegate.swift in Sources */,
+				146694F42BC7200400B3629E /* StatsViewController.swift in Sources */,
 				E28DC22D2BBF22DA00C04BC6 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
