@@ -18,6 +18,9 @@
 		39B465AD2BBEF5A40070F6A6 /* crosswordAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B465AC2BBEF5A40070F6A6 /* crosswordAppUITests.swift */; };
 		39B465AF2BBEF5A40070F6A6 /* crosswordAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B465AE2BBEF5A40070F6A6 /* crosswordAppUITestsLaunchTests.swift */; };
 		39B465FC2BC1D6270070F6A6 /* MediumPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B465FB2BC1D6270070F6A6 /* MediumPuzzleViewController.swift */; };
+		C5CD41B52BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */; };
+		C5CD41B62BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */; };
+		C5CD41B72BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */; };
 		E28DC22D2BBF22DA00C04BC6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28DC22C2BBF22DA00C04BC6 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,7 @@
 		39B465AC2BBEF5A40070F6A6 /* crosswordAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crosswordAppUITests.swift; sourceTree = "<group>"; };
 		39B465AE2BBEF5A40070F6A6 /* crosswordAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crosswordAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		39B465FB2BC1D6270070F6A6 /* MediumPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumPuzzleViewController.swift; sourceTree = "<group>"; };
+		C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPuzzleViewController.swift; sourceTree = "<group>"; };
 		E28DC22C2BBF22DA00C04BC6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +119,7 @@
 				39B465992BBEF5A40070F6A6 /* Info.plist */,
 				E28DC22C2BBF22DA00C04BC6 /* SettingsViewController.swift */,
 				146694F32BC7200400B3629E /* StatsViewController.swift */,
+				C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */,
 			);
 			path = crosswordApp;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 				39B4658C2BBEF5970070F6A6 /* AppDelegate.swift in Sources */,
 				39B4658E2BBEF5970070F6A6 /* SceneDelegate.swift in Sources */,
 				146694F42BC7200400B3629E /* StatsViewController.swift in Sources */,
+				C5CD41B52BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */,
 				E28DC22D2BBF22DA00C04BC6 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5CD41B62BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */,
 				39B465A32BBEF5A40070F6A6 /* crosswordAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39B465AD2BBEF5A40070F6A6 /* crosswordAppUITests.swift in Sources */,
+				C5CD41B72BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */,
 				39B465AF2BBEF5A40070F6A6 /* crosswordAppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
