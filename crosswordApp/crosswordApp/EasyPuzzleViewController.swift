@@ -109,6 +109,11 @@ class EasyPuzzleViewController: UIViewController {
     
     @IBAction func E3Changed(_ sender: UITextField) {
     }
+    
+    @IBAction func checkBtnClicked(_ sender: Any) {
+    }
+    
+    
 }
     
     

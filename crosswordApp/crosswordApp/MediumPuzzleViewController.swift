@@ -130,6 +130,8 @@ class MediumPuzzleViewController: UIViewController {
     @IBAction func E3Edited(_ sender: Any) {
     }
     
+    @IBAction func checkBtnClicked(_ sender: Any) {
+    }
     
     
     
