@@ -21,6 +21,7 @@
 		C5CD41B52BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */; };
 		C5CD41B62BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */; };
 		C5CD41B72BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */; };
+		DC094C702BC77F13005EC38F /* HardPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC094C6F2BC77F13005EC38F /* HardPuzzleViewController.swift */; };
 		E28DC22D2BBF22DA00C04BC6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28DC22C2BBF22DA00C04BC6 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		39B465AE2BBEF5A40070F6A6 /* crosswordAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crosswordAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		39B465FB2BC1D6270070F6A6 /* MediumPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumPuzzleViewController.swift; sourceTree = "<group>"; };
 		C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPuzzleViewController.swift; sourceTree = "<group>"; };
+		DC094C6F2BC77F13005EC38F /* HardPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardPuzzleViewController.swift; sourceTree = "<group>"; };
 		E28DC22C2BBF22DA00C04BC6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 				39B4658D2BBEF5970070F6A6 /* SceneDelegate.swift */,
 				39B4658F2BBEF5970070F6A6 /* ViewController.swift */,
 				39B465912BBEF5970070F6A6 /* Main.storyboard */,
+				DC094C6F2BC77F13005EC38F /* HardPuzzleViewController.swift */,
 				39B465FB2BC1D6270070F6A6 /* MediumPuzzleViewController.swift */,
 				39B465942BBEF5A40070F6A6 /* Assets.xcassets */,
 				39B465962BBEF5A40070F6A6 /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39B465FC2BC1D6270070F6A6 /* MediumPuzzleViewController.swift in Sources */,
+				DC094C702BC77F13005EC38F /* HardPuzzleViewController.swift in Sources */,
 				39B465902BBEF5970070F6A6 /* ViewController.swift in Sources */,
 				39B4658C2BBEF5970070F6A6 /* AppDelegate.swift in Sources */,
 				39B4658E2BBEF5970070F6A6 /* SceneDelegate.swift in Sources */,
