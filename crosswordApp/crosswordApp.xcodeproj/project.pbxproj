@@ -22,6 +22,7 @@
 		C5CD41B62BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */; };
 		C5CD41B72BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */; };
 		DC094C702BC77F13005EC38F /* HardPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC094C6F2BC77F13005EC38F /* HardPuzzleViewController.swift */; };
+		E26FB3EF2BD5FB250034E2E5 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26FB3EE2BD5FB250034E2E5 /* Toast.swift */; };
 		E28DC22D2BBF22DA00C04BC6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28DC22C2BBF22DA00C04BC6 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		39B465FB2BC1D6270070F6A6 /* MediumPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumPuzzleViewController.swift; sourceTree = "<group>"; };
 		C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPuzzleViewController.swift; sourceTree = "<group>"; };
 		DC094C6F2BC77F13005EC38F /* HardPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardPuzzleViewController.swift; sourceTree = "<group>"; };
+		E26FB3EE2BD5FB250034E2E5 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		E28DC22C2BBF22DA00C04BC6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				E28DC22C2BBF22DA00C04BC6 /* SettingsViewController.swift */,
 				146694F32BC7200400B3629E /* StatsViewController.swift */,
 				C5CD41B42BC75EA7007AC944 /* EasyPuzzleViewController.swift */,
+				E26FB3EE2BD5FB250034E2E5 /* Toast.swift */,
 			);
 			path = crosswordApp;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				39B4658E2BBEF5970070F6A6 /* SceneDelegate.swift in Sources */,
 				146694F42BC7200400B3629E /* StatsViewController.swift in Sources */,
 				C5CD41B52BC75EA7007AC944 /* EasyPuzzleViewController.swift in Sources */,
+				E26FB3EF2BD5FB250034E2E5 /* Toast.swift in Sources */,
 				E28DC22D2BBF22DA00C04BC6 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
