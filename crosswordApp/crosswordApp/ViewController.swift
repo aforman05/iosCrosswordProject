@@ -32,5 +32,16 @@ class ViewController: UIViewController {
     }
     @IBAction func hardBtn(_ sender: Any) {
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // get the segue
+        let transition = segue.identifier
+        
+        // if segue to stats page
+        if transition == "statsSegue" {
+            let destination = segue.destination as! StatsViewController
+            destination.name = nameOL.text ?? ""
+        }
+    }
 }
 

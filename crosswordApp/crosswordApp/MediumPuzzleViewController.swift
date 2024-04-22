@@ -59,6 +59,8 @@ class MediumPuzzleViewController: UIViewController {
     
     @IBOutlet weak var E3: UITextField!
     
+    let stats = StatsViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -72,6 +74,7 @@ class MediumPuzzleViewController: UIViewController {
     }
     
     @IBAction func hintBtnClicked(_ sender: Any) {
+        stats.hints += 1
     }
     
     @IBAction func A3Edited(_ sender: Any) {

@@ -15,6 +15,10 @@ class StatsViewController: UIViewController {
     @IBOutlet weak var puzzlesCompletedOL: UILabel!
     @IBOutlet weak var timeOL: UILabel!
     @IBOutlet weak var welcomeOL: UILabel!
+    var name: String = ""
+    var hints: Int = 0
+    var time: Int = 0
+    var completed: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,6 +29,10 @@ class StatsViewController: UIViewController {
         if(!appDelegate.darkModeCond) {
             navigationController?.overrideUserInterfaceStyle = .dark
         }
+        welcomeOL.text = "Hello, " + name
+        hintsOL.text = "Hints Used: " + String(hints)
+        timeOL.text = "Total Time: " + String(time)
+        puzzlesCompletedOL.text = "Puzzles Completed: " + String(completed)
     }
     
 }

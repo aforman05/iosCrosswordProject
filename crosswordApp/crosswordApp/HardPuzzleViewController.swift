@@ -89,6 +89,8 @@ class HardPuzzleViewController: UIViewController {
     
     @IBOutlet weak var G5: UITextField!
     
+    let stats = StatsViewController()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,6 +105,7 @@ class HardPuzzleViewController: UIViewController {
     }
     
     @IBAction func hintBtnClicked(_ sender: Any) {
+        stats.hints += 1
     }
     
     @IBAction func A3Edited(_ sender: Any) {

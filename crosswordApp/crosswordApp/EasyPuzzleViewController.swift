@@ -41,6 +41,8 @@ class EasyPuzzleViewController: UIViewController {
     @IBOutlet weak var E2: UITextField!
     @IBOutlet weak var E3: UITextField!
     
+    let stats = StatsViewController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,6 +56,7 @@ class EasyPuzzleViewController: UIViewController {
     }
     
     @IBAction func hintBtnPressed(_ sender: UIButton) {
+        stats.hints += 1
     }
     
     @IBAction func A1Changed(_ sender: UITextField) {

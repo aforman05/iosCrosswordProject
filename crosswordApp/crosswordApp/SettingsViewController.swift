@@ -48,7 +48,7 @@ class SettingsViewController: UIViewController {
             appDelegate.darkModeCond.toggle()
             navigationController?.overrideUserInterfaceStyle = .light
             if(popUpsSwitchOL.isOn) {
-                self.view.makeToast("You've disabled pop up messages 😢",duration: 2.0, position: .bottom)
+                self.view.makeToast("You've disabled dark mode 😢",duration: 2.0, position: .bottom)
             }
         }
     }
