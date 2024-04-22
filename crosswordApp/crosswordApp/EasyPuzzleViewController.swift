@@ -8,6 +8,9 @@
 import UIKit
 
 class EasyPuzzleViewController: UIViewController {
+    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     @IBOutlet weak var TimerOL: UILabel!
     @IBOutlet weak var ButtonOL: UIButton!
     @IBOutlet weak var CluesOL: UILabel!
@@ -42,6 +45,12 @@ class EasyPuzzleViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        if(appDelegate.darkModeCond) {
+            navigationController?.overrideUserInterfaceStyle = .light
+        }
+        if(!appDelegate.darkModeCond) {
+            navigationController?.overrideUserInterfaceStyle = .dark
+        }
     }
     
     @IBAction func hintBtnPressed(_ sender: UIButton) {

@@ -9,6 +9,8 @@ import UIKit
 
 class StatsViewController: UIViewController {
 
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     @IBOutlet weak var hintsOL: UILabel!
     @IBOutlet weak var puzzlesCompletedOL: UILabel!
     @IBOutlet weak var timeOL: UILabel!
@@ -17,6 +19,12 @@ class StatsViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        if(appDelegate.darkModeCond) {
+            navigationController?.overrideUserInterfaceStyle = .light
+        }
+        if(!appDelegate.darkModeCond) {
+            navigationController?.overrideUserInterfaceStyle = .dark
+        }
     }
     
 }

@@ -1768,7 +1768,10 @@
                     <navigationItem key="navigationItem" id="hP8-6d-5WY"/>
                     <connections>
                         <outlet property="darkModeSwitchOL" destination="bkf-zq-rof" id="209-2c-Kta"/>
+                        <outlet property="hintsSwitchOL" destination="rPB-dg-621" id="gu2-FJ-6Mi"/>
+                        <outlet property="popUpsSwitchOL" destination="kDk-Gg-yyy" id="rT9-PW-NWd"/>
                         <outlet property="settingsIntroOL" destination="zrJ-EY-NxI" id="cGK-T3-utW"/>
+                        <outlet property="timerSwitchOL" destination="SUn-mN-d2A" id="jLo-jl-jXl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6P-i7-Drm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

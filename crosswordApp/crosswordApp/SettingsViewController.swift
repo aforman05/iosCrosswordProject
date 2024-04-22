@@ -9,9 +9,9 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
-    var darkModeCond = false
-    var popCond = true
-    var hintCond = true
+    //var darkModeCond = false
+    //var popCond = true
+    //var hintCond = true
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -29,6 +29,9 @@ class SettingsViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         darkModeSwitchOL.isOn=appDelegate.darkModeCond
+        hintsSwitchOL.isOn=appDelegate.hintCond
+        timerSwitchOL.isOn=appDelegate.timerCond
+        popUpsSwitchOL.isOn=appDelegate.popCond
     }
     
     
@@ -37,38 +40,71 @@ class SettingsViewController: UIViewController {
         if(darkModeSwitchOL.isOn) {
             appDelegate.darkModeCond.toggle()
             navigationController?.overrideUserInterfaceStyle = .dark
+            if(popUpsSwitchOL.isOn) {
+                self.view.makeToast("You've enabled dark mode!",duration: 2.0, position: .bottom)
+            }
         }
         if(!darkModeSwitchOL.isOn) {
             appDelegate.darkModeCond.toggle()
             navigationController?.overrideUserInterfaceStyle = .light
+            if(popUpsSwitchOL.isOn) {
+                self.view.makeToast("You've disabled pop up messages 😢",duration: 2.0, position: .bottom)
+            }
         }
     }
     
     @IBAction func timeSwitch(_ sender: Any) {
         //create a boolean which disables the timer from being measured, could also disable the time from being displayed at puzzle completion/stat page
-        
+        if(timerSwitchOL.isOn) {
+            appDelegate.timerCond.toggle()
+            if(popUpsSwitchOL.isOn) {
+                self.view.makeToast("You've enabled the timer!",duration: 2.0, position: .bottom)
+            }
+        }
+        if(!timerSwitchOL.isOn) {
+            appDelegate.timerCond.toggle()
+            if(popUpsSwitchOL.isOn) {
+                self.view.makeToast("You've disabled the timer 😢",duration: 2.0, position: .bottom)
+            }
+        }
     }
     
     @IBAction func hintSwitch(_ sender: Any) {
         //create a boolean which disables hints from coming up when a user spends a certain amount of time without inputing any characters
-        hintCond.toggle()
+        if(hintsSwitchOL.isOn) {
+            appDelegate.hintCond.toggle()
+            if(popUpsSwitchOL.isOn) {
+                self.view.makeToast("You've enabled hints!",duration: 2.0, position: .bottom)
+            }
+        }
+        if(!hintsSwitchOL.isOn) {
+            appDelegate.hintCond.toggle()
+            if(popUpsSwitchOL.isOn) {
+                self.view.makeToast("You've disabled hints 😢",duration: 2.0, position: .bottom)
+            }
+        }
     }
     
     @IBAction func popUpSwitch(_ sender: Any) {
         //create a boolean which disables popups from occuring, providing feedback and/or positive reinforcement
-        popCond.toggle()
-        if(popCond == true) {
+        //popCond.toggle()
+        if(popUpsSwitchOL.isOn) {
+            appDelegate.popCond.toggle()
             self.view.makeToast("You've enabled pop up messages!",duration: 2.0, position: .bottom)
         }
-        if(popCond == false) {
-            self.view.makeToast("You've disabled pop up messages :(",duration: 2.0, position: .bottom)
+        if(!popUpsSwitchOL.isOn) {
+            appDelegate.popCond.toggle()
+            self.view.makeToast("You've disabled pop up messages 😢",duration: 2.0, position: .bottom)
         }
     }
     
     @IBOutlet weak var settingsIntroOL: UILabel!
     
+    @IBOutlet weak var timerSwitchOL: UISwitch!
     
+    @IBOutlet weak var hintsSwitchOL: UISwitch!
     
+    @IBOutlet weak var popUpsSwitchOL: UISwitch!
     
     
     

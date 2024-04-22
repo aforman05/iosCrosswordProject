@@ -9,6 +9,8 @@ import UIKit
 
 class HardPuzzleViewController: UIViewController {
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     @IBOutlet weak var timerOL: UILabel!
     
     @IBOutlet weak var hintOL: UIButton!
@@ -92,6 +94,12 @@ class HardPuzzleViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        if(appDelegate.darkModeCond) {
+            navigationController?.overrideUserInterfaceStyle = .light
+        }
+        if(!appDelegate.darkModeCond) {
+            navigationController?.overrideUserInterfaceStyle = .dark
+        }
     }
     
     @IBAction func hintBtnClicked(_ sender: Any) {
