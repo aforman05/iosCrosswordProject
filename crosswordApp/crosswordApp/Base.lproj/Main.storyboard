@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GPU-fA-wQg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GPU-fA-wQg">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -537,9 +537,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="A3Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="Pu5-jf-9gh"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qFK-l9-9nj">
                                         <rect key="frame" x="156" y="0.0" width="52" height="52"/>
@@ -549,9 +546,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="A4Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="U09-Xb-05c"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9g0-hw-Gh2">
                                         <rect key="frame" x="208" y="0.0" width="52" height="52"/>
@@ -561,9 +555,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="A5Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="XBk-5Y-iZq"/>
-                                        </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black" translatesAutoresizingMaskIntoConstraints="NO" id="5Y2-4n-UVA">
                                         <rect key="frame" x="260" y="0.0" width="52" height="52"/>
@@ -599,9 +590,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="B2Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="TLg-wO-4a0"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nQl-ZU-t45">
                                         <rect key="frame" x="104" y="0.0" width="52" height="52"/>
@@ -611,9 +599,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="B3Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="LEe-qT-bPG"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vKB-li-2TP">
                                         <rect key="frame" x="156" y="0.0" width="52" height="52"/>
@@ -623,9 +608,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="B4Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="w7B-NT-kun"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YeV-A1-JKY">
                                         <rect key="frame" x="208" y="0.0" width="52" height="52"/>
@@ -635,9 +617,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="B5Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="F4F-0c-tfM"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9HT-mL-WoY">
                                         <rect key="frame" x="260" y="0.0" width="52" height="52"/>
@@ -647,9 +626,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="B6Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="zCP-Gb-uNI"/>
-                                        </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black" translatesAutoresizingMaskIntoConstraints="NO" id="2mM-d1-dKx">
                                         <rect key="frame" x="312" y="0.0" width="52" height="52"/>
@@ -671,9 +647,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="C1Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="7f9-bz-LFa"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AHI-hi-cbM">
                                         <rect key="frame" x="52" y="0.0" width="52" height="52"/>
@@ -683,9 +656,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="C2Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="jhv-js-D5m"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SnP-df-QjX">
                                         <rect key="frame" x="104" y="0.0" width="52" height="52"/>
@@ -695,9 +665,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="C3Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="dIl-k6-8vA"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="050-4P-nlN">
                                         <rect key="frame" x="156" y="0.0" width="52" height="52"/>
@@ -707,9 +674,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="C4Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="BeJ-3F-zbX"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="336-BQ-04R">
                                         <rect key="frame" x="208" y="0.0" width="52" height="52"/>
@@ -719,9 +683,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="C5Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="ckw-VA-qyQ"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e6y-wT-kNC">
                                         <rect key="frame" x="260" y="0.0" width="52" height="52"/>
@@ -731,9 +692,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="C6Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="c0F-Em-Bod"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x4n-IA-F09">
                                         <rect key="frame" x="312" y="0.0" width="52" height="52"/>
@@ -743,9 +701,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="C7Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="aHM-7b-6Fm"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -760,9 +715,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="D1Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="rrb-Zn-YBb"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i6j-Z8-0e7">
                                         <rect key="frame" x="52" y="0.0" width="52" height="52"/>
@@ -772,9 +724,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="D2Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="lfd-3w-Kgb"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tgh-OZ-fvm">
                                         <rect key="frame" x="104" y="0.0" width="52" height="52"/>
@@ -784,9 +733,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="D3Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="g3g-up-ceJ"/>
-                                        </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black" translatesAutoresizingMaskIntoConstraints="NO" id="KR5-lt-R6P">
                                         <rect key="frame" x="156" y="0.0" width="52" height="52"/>
@@ -803,9 +749,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="D5Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="EB7-Oz-8nI"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4f0-G0-63l">
                                         <rect key="frame" x="260" y="0.0" width="52" height="52"/>
@@ -815,9 +758,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="D6Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="ONh-ez-PmT"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l6X-Ns-IQW">
                                         <rect key="frame" x="312" y="0.0" width="52" height="52"/>
@@ -827,9 +767,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="D7Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="3EN-Wt-hL6"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -844,9 +781,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="E1Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="7Db-3j-Rje"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xkh-eW-xfH">
                                         <rect key="frame" x="52" y="0.0" width="52" height="52"/>
@@ -856,9 +790,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="E2Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="jzX-aT-t3s"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vv7-i7-PNm">
                                         <rect key="frame" x="104" y="0.0" width="52" height="52"/>
@@ -868,9 +799,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="E3Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="6xN-Cr-rJb"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ER-lU-cDo">
                                         <rect key="frame" x="156" y="0.0" width="52" height="52"/>
@@ -880,9 +808,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="E4Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="pvc-jQ-Mdd"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sED-pj-iED">
                                         <rect key="frame" x="208" y="0.0" width="52" height="52"/>
@@ -892,9 +817,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="E5Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="J9Y-ox-bgP"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KFK-th-ZzD">
                                         <rect key="frame" x="260" y="0.0" width="52" height="52"/>
@@ -904,9 +826,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="E6Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="zAy-sx-DrJ"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KXk-gP-i7V">
                                         <rect key="frame" x="312" y="0.0" width="52" height="52"/>
@@ -916,9 +835,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="E7Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="G51-uZ-asc"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -940,9 +856,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="F2Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="xWo-dp-L0E"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="maE-6D-9q5">
                                         <rect key="frame" x="104" y="0.0" width="52" height="52"/>
@@ -952,9 +865,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="F3Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="5bE-4K-u4S"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a4g-mz-65A">
                                         <rect key="frame" x="156" y="0.0" width="52" height="52"/>
@@ -964,9 +874,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="F4Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="aAV-1I-W6s"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zAN-Qi-hhA">
                                         <rect key="frame" x="208" y="0.0" width="52" height="52"/>
@@ -976,9 +883,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="F5Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="J4B-2X-3T5"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WZi-50-x8k">
                                         <rect key="frame" x="260" y="0.0" width="52" height="52"/>
@@ -988,9 +892,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="F6Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="97F-Ao-kfX"/>
-                                        </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black" translatesAutoresizingMaskIntoConstraints="NO" id="4p1-uL-AeS">
                                         <rect key="frame" x="312" y="0.0" width="52" height="52"/>
@@ -1026,9 +927,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="G3Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="pad-sm-Cub"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zZz-aH-7Rf">
                                         <rect key="frame" x="156" y="0.0" width="52" height="52"/>
@@ -1038,9 +936,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="G4Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="BdD-uf-Y7v"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2GK-w1-ayA">
                                         <rect key="frame" x="208" y="0.0" width="52" height="52"/>
@@ -1050,9 +945,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
-                                        <connections>
-                                            <action selector="G5Edited:" destination="heL-E1-qk8" eventType="editingChanged" id="dBf-bn-Uws"/>
-                                        </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black" translatesAutoresizingMaskIntoConstraints="NO" id="bnZ-bR-doS">
                                         <rect key="frame" x="260" y="0.0" width="52" height="52"/>
@@ -1625,7 +1517,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Ksk-rF-yAL">
-                                <rect key="frame" x="45" y="258" width="181.66666666666666" height="126"/>
+                                <rect key="frame" x="44.999999999999986" y="258" width="181.66666666666663" height="126"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGq-Zk-61B">
                                         <rect key="frame" x="0.0" y="0.0" width="99.333333333333329" height="25.333333333333332"/>
