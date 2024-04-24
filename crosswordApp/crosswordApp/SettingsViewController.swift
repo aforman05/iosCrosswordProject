@@ -98,6 +98,7 @@ class SettingsViewController: UIViewController {
         }
     }
     
+    
     @IBOutlet weak var settingsIntroOL: UILabel!
     
     @IBOutlet weak var timerSwitchOL: UISwitch!
@@ -106,9 +107,16 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var popUpsSwitchOL: UISwitch!
     
+ 
     
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "statsSegue" {
+            let destination = segue.destination as! StatsViewController
+            destination.name = nameTextField.text ?? ""
+        }
+    }
+
     
 
     /*

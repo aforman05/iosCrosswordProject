@@ -8,6 +8,7 @@
 import UIKit
 
 class EasyPuzzleViewController: UIViewController {
+    var name: String = ""
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     

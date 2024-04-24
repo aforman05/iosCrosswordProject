@@ -8,6 +8,7 @@
 import UIKit
 
 class HardPuzzleViewController: UIViewController {
+    var name: String = ""
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     

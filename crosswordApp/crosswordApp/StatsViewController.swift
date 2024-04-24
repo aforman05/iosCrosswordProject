@@ -5,21 +5,23 @@
 //  Created by Chase Durbin on 4/10/24.
 //
 
+
 import UIKit
 
 class StatsViewController: UIViewController {
+    var name: String = ""
+    var hints: Int = 0
+    var time: Int = 0
+    var completed: Int = 0
 
+    
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     @IBOutlet weak var hintsOL: UILabel!
     @IBOutlet weak var puzzlesCompletedOL: UILabel!
     @IBOutlet weak var timeOL: UILabel!
     @IBOutlet weak var welcomeOL: UILabel!
-    var name: String = ""
-    var hints: Int = 0
-    var time: Int = 0
-    var completed: Int = 0
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -35,4 +37,16 @@ class StatsViewController: UIViewController {
         puzzlesCompletedOL.text = "Puzzles Completed: " + String(completed)
     }
     
-}
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "starSegue" {
+            if let destination = segue.destination as? StarViewController {
+                destination.name = name
+                // Pass any other necessary data to the destination view controller
+            }
+
+            }
+        }
+    }
+    
+
