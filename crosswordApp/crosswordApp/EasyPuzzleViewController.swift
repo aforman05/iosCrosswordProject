@@ -61,6 +61,7 @@ class EasyPuzzleViewController: UIViewController {
     }
     
     @IBAction func checkBtnClicked(_ sender: Any) {
+        
     }
     
     
