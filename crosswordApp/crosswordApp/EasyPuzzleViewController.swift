@@ -60,69 +60,6 @@ class EasyPuzzleViewController: UIViewController {
         stats.hints += 1
     }
     
-    @IBAction func A1Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func A2Changed(_ sender: Any) {
-    }
-    
-    @IBAction func A3Changed(_ sender: Any) {
-    }
-    
-    @IBAction func A4Changed(_ sender: Any) {
-    }
-    
-    @IBAction func A5Changed(_ sender: Any) {
-    }
-    
-    @IBAction func B1Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func B2Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func B3Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func B4Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func B5Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func C1Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func C2Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func C3Changed(_ sender: Any) {
-    }
-    
-    @IBAction func C4Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func C5Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func D1Changed(_ sender: Any) {
-    }
-    
-    @IBAction func D2Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func D3Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func E1Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func E2Changed(_ sender: UITextField) {
-    }
-    
-    @IBAction func E3Changed(_ sender: UITextField) {
-    }
-    
     @IBAction func checkBtnClicked(_ sender: Any) {
     }
     
