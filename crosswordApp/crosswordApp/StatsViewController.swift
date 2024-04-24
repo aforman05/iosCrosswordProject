@@ -37,16 +37,6 @@ class StatsViewController: UIViewController {
         puzzlesCompletedOL.text = "Puzzles Completed: " + String(completed)
     }
     
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "starSegue" {
-            if let destination = segue.destination as? StarViewController {
-                destination.name = name
-                // Pass any other necessary data to the destination view controller
-            }
-
-            }
-        }
-    }
+}
     
 

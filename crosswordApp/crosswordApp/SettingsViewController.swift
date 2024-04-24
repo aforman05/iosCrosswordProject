@@ -12,6 +12,7 @@ class SettingsViewController: UIViewController {
     //var darkModeCond = false
     //var popCond = true
     //var hintCond = true
+    var name: String = ""
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -28,6 +29,7 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        settingsIntroOL.text = "Welcome, " + name + ", to the settings page! Here you can adjust a number of setting such as if you'd like to enable dark mode, enable a timer when completing puzzles, etc!"
         darkModeSwitchOL.isOn=appDelegate.darkModeCond
         hintsSwitchOL.isOn=appDelegate.hintCond
         timerSwitchOL.isOn=appDelegate.timerCond
@@ -106,16 +108,6 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var hintsSwitchOL: UISwitch!
     
     @IBOutlet weak var popUpsSwitchOL: UISwitch!
-    
- 
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "statsSegue" {
-            let destination = segue.destination as! StatsViewController
-            destination.name = nameTextField.text ?? ""
-        }
-    }
 
     
 

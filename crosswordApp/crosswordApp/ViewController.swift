@@ -26,19 +26,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func easyBtn(_ sender: Any) {
-        performSegue(withIdentifier: "easySegue", sender: self)
 
     }
     
     @IBAction func mediumBtn(_ sender: Any) {
-        performSegue(withIdentifier: "mediumSegue", sender: self)
-
         
     }
     @IBAction func hardBtn(_ sender: Any) {
-        performSegue(withIdentifier: "hardSegue", sender: self)
-            
-
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -50,25 +45,9 @@ class ViewController: UIViewController {
                 let destination = segue.destination as! StatsViewController
                 destination.name = nameOL.text ?? ""
             }
-            
-            // if segue to crossword pages
-            if let identifier = segue.identifier {
-                switch identifier {
-                case "easySegue":
-                    if let destination = segue.destination as? EasyPuzzleViewController {
-                        destination.name = nameOL.text ?? ""
-                    }
-                case "mediumSegue":
-                    if let destination = segue.destination as? MediumPuzzleViewController {
-                        destination.name = nameOL.text ?? ""
-                    }
-                case "hardSegue":
-                    if let destination = segue.destination as? HardPuzzleViewController {
-                        destination.name = nameOL.text ?? ""
-                    }
-                default:
-                    break
-                }
+            if transition == "settingsSegue" {
+                let destination = segue.destination as! SettingsViewController
+                destination.name = nameOL.text ?? ""
             }
         }
     }
