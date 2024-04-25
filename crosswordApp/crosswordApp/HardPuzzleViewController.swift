@@ -107,7 +107,8 @@ class HardPuzzleViewController: UIViewController {
             navigationController?.overrideUserInterfaceStyle = .dark
         }
         
-        cluesOL.text = "ACROSS \n 1. Rotten \n 4. Window segments \n 6. Part of school that totally bites? \n 8. 2003 Will Ferrell film \n 9. Approximate percentage of the world's population that is left-handed \n 10. Party bag contents \n 12. Wedding reception speech \n 13. When tripled, symbol of a texter's typing \n DOWN \n 1. Wings, nachos, onion rings, etc. \n 2. Actress de Armas \n 3. Canine handler \n 4. Season one, episode one \n 5. Mattress cover \n 6. Place to hang a coat \n 7 The 'A' of Q&A: Abbr \n 11. Philosophy for Laozi"
+        cluesOL.text = "ACROSS \n 1. Rotten \n 4. Window segments \n 6. Part of school that totally bites? \n 8. 2003 Will Ferrell film \n 9. Approximate percentage of the world's population that is left-handed \n 10. Party bag contents \n 12. Wedding reception speech \n 13. When tripled, symbol of a texter's typing \n \n DOWN \n 1. Wings, nachos, onion rings, etc. \n 2. Actress de Armas \n 3. Canine handler \n 4. Season one, episode one \n 5. Mattress cover \n 6. Place to hang a coat \n 7 The 'A' of Q&A: Abbr \n 11. Philosophy for Laozi"
+        
     }
     
     @IBAction func hintBtnClicked(_ sender: Any) {
