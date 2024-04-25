@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GPU-fA-wQg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GPU-fA-wQg">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -130,9 +130,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="A3Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="6TZ-ug-QQA"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cmm-fj-UYH">
                                         <rect key="frame" x="225" y="0.0" width="75" height="75"/>
@@ -142,9 +139,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="A4Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="u49-1l-RvF"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mGU-B2-FqA">
                                         <rect key="frame" x="300" y="0.0" width="75" height="75"/>
@@ -154,9 +148,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="A5Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="Kkx-iW-DE6"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -171,9 +162,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="B1Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="Oo4-bx-Ina"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Twr-D7-1Xd">
                                         <rect key="frame" x="75" y="0.0" width="75" height="75"/>
@@ -183,9 +171,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="B2Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="2vA-Df-ae9"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jJi-75-AQq">
                                         <rect key="frame" x="150" y="0.0" width="75" height="75"/>
@@ -195,9 +180,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="B3Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="drV-yQ-2yr"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n0v-si-Cax">
                                         <rect key="frame" x="225" y="0.0" width="75" height="75"/>
@@ -207,9 +189,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="B4Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="fuY-u3-Y1Q"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RaN-s6-cPf">
                                         <rect key="frame" x="300" y="0.0" width="75" height="75"/>
@@ -219,9 +198,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="B5Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="T6o-h7-A7D"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -236,9 +212,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="C1Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="Gok-EM-h1u"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IsH-Rc-gRs">
                                         <rect key="frame" x="75" y="0.0" width="75" height="75"/>
@@ -248,9 +221,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="C2Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="Du6-Wc-gWV"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ktq-bg-9l3">
                                         <rect key="frame" x="150" y="0.0" width="75" height="75"/>
@@ -260,9 +230,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="C3Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="2pb-9t-Gal"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gql-Wk-CNZ">
                                         <rect key="frame" x="225" y="0.0" width="75" height="75"/>
@@ -272,9 +239,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="C4Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="neY-NY-sa6"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I87-Pf-Vmi">
                                         <rect key="frame" x="300" y="0.0" width="75" height="75"/>
@@ -284,9 +248,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="C5Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="42O-QG-rWe"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -301,9 +262,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="D1Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="cZ7-vP-Par"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j8l-Bd-8SU">
                                         <rect key="frame" x="75" y="0.0" width="75" height="75"/>
@@ -313,9 +271,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="D2Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="RbM-Im-SHT"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Uy-Uo-4SR">
                                         <rect key="frame" x="150" y="0.0" width="75" height="75"/>
@@ -325,9 +280,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="D3Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="17V-NN-2lU"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNE-if-2Vg">
                                         <rect key="frame" x="225" y="0.0" width="75" height="75"/>
@@ -337,9 +289,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="D4Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="HFc-ii-FAy"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0UL-Bz-8h8">
                                         <rect key="frame" x="300" y="0.0" width="75" height="75"/>
@@ -349,9 +298,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="D5Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="DhY-ev-IW9"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -366,9 +312,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="E1Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="Yih-2s-WRf"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3qh-ZT-tiK">
                                         <rect key="frame" x="75" y="0.0" width="75" height="75"/>
@@ -378,9 +321,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="E2Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="UOx-zt-Ne4"/>
-                                        </connections>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="awF-Bn-v0n">
                                         <rect key="frame" x="150" y="0.0" width="75" height="75"/>
@@ -390,9 +330,6 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no"/>
-                                        <connections>
-                                            <action selector="E3Edited:" destination="ggg-ho-0YY" eventType="editingChanged" id="bjR-So-D6o"/>
-                                        </connections>
                                     </textField>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black" translatesAutoresizingMaskIntoConstraints="NO" id="fOT-4W-ghU">
                                         <rect key="frame" x="225" y="0.0" width="75" height="75"/>
@@ -418,7 +355,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usa-vi-XYj">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usa-vi-XYj">
                                 <rect key="frame" x="233" y="486" width="62" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="gp6-YJ-Cbe"/>
@@ -1529,7 +1466,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Ksk-rF-yAL">
-                                <rect key="frame" x="45" y="258" width="181.66666666666669" height="126"/>
+                                <rect key="frame" x="45" y="258" width="181.66666666666666" height="126"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGq-Zk-61B">
                                         <rect key="frame" x="0.0" y="0.0" width="99.333333333333329" height="25.333333333333332"/>
@@ -1711,7 +1648,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

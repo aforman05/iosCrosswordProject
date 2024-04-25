@@ -62,6 +62,11 @@ class MediumPuzzleViewController: UIViewController {
     
     let stats = StatsViewController()
     
+    let key = ["P", "R", "O", "A", "C", "H", "O", "O", "C", "H", "I", "M", "P", "H", "O", "L", "E", "S", "E", "W", "E"]
+    
+    var counter = 0
+    var timer = Timer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -72,82 +77,71 @@ class MediumPuzzleViewController: UIViewController {
         if(!appDelegate.darkModeCond) {
             navigationController?.overrideUserInterfaceStyle = .dark
         }
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+        
+        cluesOL.text = "ACROSS \n 1. In favor of \n 4. Sneeze sound \n 6. Monkey in the middle (of this puzzle) \n 7. What golf courses and bad plots both have \n 8. She-sheep \n DOWN \n 1. Suffix meaning 'lover of' \n 2. Where cacio e pepe is a signature dish \n 3. 'My bad!' \n 4. Feel the pain \n 5. Puppy ____ (homemade snack)"
     }
     
     @IBAction func hintBtnClicked(_ sender: Any) {
         stats.hints += 1
+        if (A3.text != "P") {
+            A3.text = "P"
+        }
+        else if (B1.text != "A") {
+            B1.text = "A"
+        }
+        else if (C1.text != "C") {
+            C1.text = "C"
+        }
+        else if (D1.text != "H") {
+            D1.text = "H"
+        }
+        else if (E1.text != "E") {
+            E1.text = "E"
+        }
+        else if (A4.text != "R") {
+            A4.text = "R"
+        }
+        else if (A5.text != "O") {
+            A5.text = "O"
+        }
+        else if (B2.text != "C") {
+            B2.text = "C"
+        }
+        else {
+            self.view.makeToast("You have used too many hints.",duration: 2.0, position: .bottom)
+        }
     }
     
-    @IBAction func A3Edited(_ sender: Any) {
-    }
-    
-    @IBAction func A4Edited(_ sender: Any) {
-    }
-    
-    @IBAction func A5Edited(_ sender: Any) {
-    }
-    
-    @IBAction func B1Edited(_ sender: Any) {
-    }
-    
-    @IBAction func B2Edited(_ sender: Any) {
-    }
-    
-    @IBAction func B3Edited(_ sender: Any) {
-    }
-    
-    @IBAction func B4Edited(_ sender: Any) {
-    }
-    
-    @IBAction func B5Edited(_ sender: Any) {
-    }
-    
-    @IBAction func C1Edited(_ sender: Any) {
-    }
-    
-    @IBAction func C2Edited(_ sender: Any) {
-    }
-    
-    @IBAction func C3Edited(_ sender: Any) {
-    }
-    
-    @IBAction func C4Edited(_ sender: Any) {
-    }
-    
-    @IBAction func C5Edited(_ sender: Any) {
-    }
-    
-    @IBAction func D1Edited(_ sender: Any) {
-    }
-    
-    @IBAction func D2Edited(_ sender: Any) {
-    }
-    
-    @IBAction func D3Edited(_ sender: Any) {
-    }
-    
-    @IBAction func D4Edited(_ sender: Any) {
-    }
-    
-    @IBAction func D5Edited(_ sender: Any) {
-    }
-    
-    @IBAction func E1Edited(_ sender: Any) {
-    }
-    
-    @IBAction func E2Edited(_ sender: Any) {
-    }
-    
-    @IBAction func E3Edited(_ sender: Any) {
-    }
+    var allCorrect = true
     
     @IBAction func checkBtnClicked(_ sender: Any) {
+        let textFields = [A3, A4, A5, B1, B2, B3, B4, B5, C1, C2, C3, C4, C5, D1, D2, D3, D4, D5, E1, E2, E3]
+        let totalBoxes = textFields.count
+        for i in 1...totalBoxes-1 {
+                if(textFields[i]!.text! == key[i]){
+                    allCorrect = true
+                }
+                else {
+                    allCorrect = false
+                    break
+                }
+        }
+        if (allCorrect == true) {
+            self.view.makeToast("You have solved the puzzle! 🤩",duration: 2.0, position: .bottom)
+            timer.invalidate()
+            stats.completed += 1
+        }
+        else {
+            self.view.makeToast("Something is wrong. 😞",duration: 2.0, position: .bottom)
+        }
     }
     
+    @objc func timerAction() {
+        counter += 1
+        timerOL.text = "\(counter)"
+        stats.time += counter
+    }
     
-    
-    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    // Get the new view controller using segue.destination.
-    // Pass the selected object to the new view controller.
     
 }
