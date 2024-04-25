@@ -188,6 +188,7 @@ class MediumPuzzleViewController: UIViewController {
                      handler: optionClosure)
         ])
     }
+    var allCorrect = true
     
     @IBAction func checkBtnClicked(_ sender: Any) {
         let textFields = [A3, A4, A5, B1, B2, B3, B4, B5, C1, C2, C3, C4, C5, D1, D2, D3, E1, E2, E3]
@@ -210,6 +211,5 @@ class MediumPuzzleViewController: UIViewController {
             hintLabel.text = "Something is wrong. 😞"
         }
     }
-    var allCorrect = true
     
 }
