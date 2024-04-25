@@ -10,7 +10,7 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var darkModeCond = true
+    var darkModeCond = false
     var popCond = true
     var hintCond = true
     var timerCond = true

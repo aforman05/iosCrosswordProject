@@ -49,10 +49,10 @@ class EasyPuzzleViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         if(appDelegate.darkModeCond) {
-            navigationController?.overrideUserInterfaceStyle = .light
+            navigationController?.overrideUserInterfaceStyle = .dark
         }
         if(!appDelegate.darkModeCond) {
-            navigationController?.overrideUserInterfaceStyle = .dark
+            navigationController?.overrideUserInterfaceStyle = .light
         }
     }
     

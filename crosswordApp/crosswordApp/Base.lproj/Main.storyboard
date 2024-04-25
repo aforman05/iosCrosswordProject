@@ -17,73 +17,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CrossWord App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPp-q8-RTM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CrossWord App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPp-q8-RTM">
                                 <rect key="frame" x="98" y="96" width="198" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Suf-0k-63D"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" systemColor="systemBrownColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S74-gg-R7H">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S74-gg-R7H">
                                 <rect key="frame" x="66" y="220" width="246" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="nameOL:" destination="Yyr-XC-qs0" eventType="editingDidEnd" id="XMF-Ii-GZY"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhm-Al-8Jj">
-                                <rect key="frame" x="54" y="326" width="100" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="start Easy"/>
-                                <connections>
-                                    <action selector="easyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aDD-bd-8lZ"/>
-                                    <segue destination="enB-ba-N15" kind="show" identifier="easySegue" id="VEs-t2-gJM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgQ-jT-l39">
-                                <rect key="frame" x="53" y="450" width="101" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="start Hard"/>
-                                <connections>
-                                    <action selector="hardBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5V-Qe-Efl"/>
-                                    <segue destination="heL-E1-qk8" kind="show" identifier="hardSegue" id="XKl-gr-bg5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djB-XY-mzU">
-                                <rect key="frame" x="73" y="518" width="62" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="stats"/>
-                                <connections>
-                                    <segue destination="FFi-JX-j6D" kind="show" identifier="statsSegue" id="hy1-4A-V3K"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m8-k8-OQC">
-                                <rect key="frame" x="61" y="590" width="85" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="settings"/>
-                                <connections>
-                                    <segue destination="zmo-nL-H7e" kind="show" identifier="settingsSegue" id="Cwb-TK-VDW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EU2-W3-hKf">
-                                <rect key="frame" x="54" y="393" width="141" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="start Medium"/>
-                                <connections>
-                                    <action selector="mediumBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iw0-JI-mfd"/>
-                                    <segue destination="ggg-ho-0YY" kind="show" identifier="mediumSegue" id="LXk-Lk-IqG"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="jdY-Sk-72j">
+                                <rect key="frame" x="135" y="349" width="123" height="243.66666666666663"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhm-Al-8Jj">
+                                        <rect key="frame" x="0.0" y="0.0" width="123" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Start Easy"/>
+                                        <connections>
+                                            <action selector="easyBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aDD-bd-8lZ"/>
+                                            <segue destination="enB-ba-N15" kind="show" identifier="easySegue" id="VEs-t2-gJM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EU2-W3-hKf">
+                                        <rect key="frame" x="0.0" y="52.333333333333314" width="123" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Start Med"/>
+                                        <connections>
+                                            <action selector="mediumBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iw0-JI-mfd"/>
+                                            <segue destination="ggg-ho-0YY" kind="show" identifier="mediumSegue" id="LXk-Lk-IqG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgQ-jT-l39">
+                                        <rect key="frame" x="0.0" y="104.66666666666669" width="123" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Start Hard"/>
+                                        <connections>
+                                            <action selector="hardBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5V-Qe-Efl"/>
+                                            <segue destination="heL-E1-qk8" kind="show" identifier="hardSegue" id="XKl-gr-bg5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djB-XY-mzU">
+                                        <rect key="frame" x="0.0" y="157" width="123" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Stats"/>
+                                        <connections>
+                                            <segue destination="FFi-JX-j6D" kind="show" identifier="statsSegue" id="hy1-4A-V3K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m8-k8-OQC">
+                                        <rect key="frame" x="0.0" y="209.33333333333337" width="123" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Settings"/>
+                                        <connections>
+                                            <segue destination="zmo-nL-H7e" kind="show" identifier="settingsSegue" id="Cwb-TK-VDW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jdY-Sk-72j" firstAttribute="top" secondItem="S74-gg-R7H" secondAttribute="bottom" constant="95" id="6HY-DH-jwF"/>
+                            <constraint firstItem="S74-gg-R7H" firstAttribute="top" secondItem="jPp-q8-RTM" secondAttribute="bottom" constant="76" id="9na-7X-dIr"/>
+                            <constraint firstItem="S74-gg-R7H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="B0B-nG-Cdm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S74-gg-R7H" secondAttribute="trailing" constant="81" id="Kdy-Fw-5Sb"/>
+                            <constraint firstItem="jPp-q8-RTM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NUK-VR-5MR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jdY-Sk-72j" secondAttribute="bottom" constant="225.33333333333337" id="crJ-I6-3rp"/>
+                            <constraint firstItem="jPp-q8-RTM" firstAttribute="centerX" secondItem="jdY-Sk-72j" secondAttribute="centerX" id="rOz-VE-Aoe"/>
+                            <constraint firstItem="jdY-Sk-72j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="135" id="u5L-he-Tx4"/>
+                            <constraint firstItem="jPp-q8-RTM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="w6R-pt-myE"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rQp-Ed-AW5"/>
                     <connections>
@@ -1466,7 +1478,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Ksk-rF-yAL">
-                                <rect key="frame" x="44.999999999999986" y="258" width="181.66666666666663" height="126"/>
+                                <rect key="frame" x="45" y="258" width="181.66666666666669" height="126"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGq-Zk-61B">
                                         <rect key="frame" x="0.0" y="0.0" width="99.333333333333329" height="25.333333333333332"/>
@@ -1649,9 +1661,6 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
