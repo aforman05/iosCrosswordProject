@@ -9,14 +9,13 @@ import UIKit
 
 class HardPuzzleViewController: UIViewController {
     var name: String = ""
-    
+    var hintName = ""
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let hintArrThree: [String:String] = ["1 Across":"Opposite of good", "1 Down" : "More examples would be fried pickles, Mozzarella sticks, artichoke dip. What place do you find these at?", "2 Down":"She was in Ghosted with Chris Hemsworth","3 Down":"This person likes to ask you questions and then shove instruments in your mouth.","4 Across" : "This is a homophone (similar sounding) with 'pain'", "4 Down" : "Someone who flies a plane", "5 Down" : "When you make the bed, you might wash the _____s", "6 Across" : "Aggressive Fish Type", "6 Down" : "These are often located on the back of bathroom doors...", "7 Down" : "First three letters of this word", "8 Across" : "A popular christmas movie", "9 Across" : "'T Minus ___ Seconds!", "10 Across" : "'It's a bag of _______", "11 Down" : "Yin and Yang comes from this belief system", "12 Across" : "Another clue could be 'What is heated bread?'", "13 Across" : "An abbreviation of 'Department of Transportation'"]
     
     @IBOutlet weak var timerOL: UILabel!
     
     @IBOutlet weak var hintOL: UIButton!
-    
-    @IBOutlet weak var cluesOL: UILabel!
     
     @IBOutlet weak var A3: UITextField!
     
@@ -96,6 +95,7 @@ class HardPuzzleViewController: UIViewController {
     
     @IBOutlet weak var twoLabel: UILabel!
     
+    @IBOutlet weak var ChooseHintBTN: UIButton!
     
     @IBOutlet weak var threeLabel: UILabel!
     
@@ -111,6 +111,7 @@ class HardPuzzleViewController: UIViewController {
     
     @IBOutlet weak var nineLabel: UILabel!
     
+    @IBOutlet weak var hintLabel: UILabel!
     @IBOutlet weak var tenLabel: UILabel!
     
     @IBOutlet weak var elevenLabel: UILabel!
@@ -119,21 +120,60 @@ class HardPuzzleViewController: UIViewController {
     
     @IBOutlet weak var thirteenLabel: UILabel!
     
+    @IBOutlet weak var cluesOL: UILabel!
+    
+    @IBAction func checkBtnClicked(_ sender: Any) {
+        if (A3.text == "B" && A4.text == "A" && A5.text == "D" && B2.text == "P" && B3.text == "A" && B4.text == "N" && B5.text == "E" && B6.text == "S" && C1.text == "P" && C2.text == "I" && C3.text == "R" && C4.text == "A" && C5.text == "N" && C6.text == "H" && C7.text == "A" && D1.text == "E" && D2.text == "L" && D3.text == "F" && D5.text == "T" && D6.text == "E" && D7.text == "N" && E1.text == "G" && E2.text == "O" && E3.text == "O" && E4.text == "D" && E5.text == "I" && E6.text == "E" && E7.text == "S" && F2.text == "T" && F3.text == "O" && F4.text == "A" && F5.text == "S" && F6.text == "T" && G3.text == "D" && G4.text == "O" && G5.text == "T") {
+            statusOL.text = "Puzzle complete!"
+        }
+        else {
+            statusOL.text = "Something is wrong!"
+        }
+     }
+    
+    @objc func timerAction() {
+        counter += 1
+        timerOL.text = "\(counter)"
+        stats.time += counter
+}
+
+    @IBAction func getHintBtnClick(_ sender: Any) {
+        hintLabel.text = hintName
+        stats.hints += 1
+    }
+    
     let stats = StatsViewController()
     
     var answerKey = ["B", "A", "D", "P", "A", "N", "E", "S", "P", "I", "R", "A", "N", "H", "A", "E", "L", "F", "T", "E", "N", "G", "O", "O", "D", "I", "E", "S", "T", "O", "A", "S", "T", "D", "O", "T"]
+    
+    var counter = 0
+    var timer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         if(appDelegate.darkModeCond) {
             navigationController?.overrideUserInterfaceStyle = .dark
         }
         if(!appDelegate.darkModeCond) {
             navigationController?.overrideUserInterfaceStyle = .light
         }
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
+        
         cluesOL.text = "ACROSS \n 1. Rotten \n 4. Window segments \n 6. Part of school that totally bites? \n 8. 2003 Will Ferrell film \n 9. Approximate percentage of the world's population that is left-handed \n 10. Party bag contents \n 12. Wedding reception speech \n 13. When tripled, symbol of a texter's typing \n \n DOWN \n 1. Wings, nachos, onion rings, etc. \n 2. Actress de Armas \n 3. Canine handler \n 4. Season one, episode one \n 5. Mattress cover \n 6. Place to hang a coat \n 7 The 'A' of Q&A: Abbr \n 11. Philosophy for Laozi"
+        
+        // Arrays to store keys (clues) and values (hints)
+        var keysArray: [String] = []
+        var valuesArray: [String] = []
+
+        // Iterate over the dictionary and populate the arrays
+        for (key, value) in hintArrThree {
+            keysArray.append(key)
+            valuesArray.append(value)
+        }
         
         setPuzzleNum(label: oneLabel, textField: A3, str: "1")
         setPuzzleNum(label: twoLabel, textField: A4, str: "2")
@@ -149,8 +189,91 @@ class HardPuzzleViewController: UIViewController {
         setPuzzleNum(label: twelveLabel, textField: F2, str: "12")
         setPuzzleNum(label: thirteenLabel, textField: G3, str: "13")
 
-        
+        // Enable the pull-down menu
+        ChooseHintBTN.showsMenuAsPrimaryAction = true
+        ChooseHintBTN.changesSelectionAsPrimaryAction = true
+
+        // Define the closure for handling menu actions
+    let optionClosure = { [self] (action: UIAction) in
+            // Access the title directly without conditional binding
+            let selectedTitle = action.title
+
+            // Handle the selected option based on its title
+            switch selectedTitle {
+            case "\(keysArray[0])":
+                hintName = valuesArray[0]
+            case "\(keysArray[1])":
+                hintName = valuesArray[1]
+            case "\(keysArray[2])":
+                hintName = valuesArray[2]
+            case "\(keysArray[3])":
+                hintName = valuesArray[3]
+            case "\(keysArray[4])":
+                hintName = valuesArray[4]
+            case "\(keysArray[5])":
+                hintName = valuesArray[5]
+            case "\(keysArray[6])":
+                hintName = valuesArray[6]
+            case "\(keysArray[7])":
+                hintName = valuesArray[7]
+            case "\(keysArray[8])":
+                hintName = valuesArray[8]
+            case "\(keysArray[9])":
+                hintName = valuesArray[9]
+            case "\(keysArray[10])":
+                hintName = valuesArray[10]
+            case "\(keysArray[11])":
+                hintName = valuesArray[11]
+            case "\(keysArray[12])":
+                hintName = valuesArray[12]
+            default:
+                break
+            }
+        }
+
+        // Create the menu with UIAction items
+        ChooseHintBTN.menu = UIMenu(children: [
+            UIAction(title: "\(keysArray[0])", handler: optionClosure),
+            UIAction(title: "\(keysArray[1])", handler: optionClosure),
+            UIAction(title: "\(keysArray[2])", handler: optionClosure),
+            UIAction(title: "\(keysArray[3])", handler: optionClosure),
+            UIAction(title: "\(keysArray[4])", handler: optionClosure),
+            UIAction(title: "\(keysArray[5])", handler: optionClosure),
+            UIAction(title: "\(keysArray[6])", handler: optionClosure),
+            UIAction(title: "\(keysArray[7])", handler: optionClosure),
+            UIAction(title: "\(keysArray[8])", handler: optionClosure),
+            UIAction(title: "\(keysArray[9])", handler: optionClosure),
+            UIAction(title: "\(keysArray[10])", handler: optionClosure),
+            UIAction(title: "\(keysArray[11])", handler: optionClosure),
+            UIAction(title: "\(keysArray[12])", handler: optionClosure)
+        ])
     }
+    @IBAction func checkBTNClicked(_ sender: Any) {
+        let textFields = [A3, A4, A5, B2, B3, B4, B5, B6, C1, C2, C3, C4, C5,C6,C7, D1, D2, D3,D5,D6,D7, E1, E2, E3,E4,E5,E6,E7,F2,F3,F4,F5,F6,G3,G4,G5]
+        let totalBoxes = textFields.count
+        for i in 1...totalBoxes-1 {
+            if(textFields[i]!.text! == answerKey[i]){
+                allCorrect = true
+            }
+            else {
+                allCorrect = false
+                break
+            }
+        }
+        if (allCorrect == true) {
+            hintLabel.text = "You have solved the puzzle! 🤩"
+            timer.invalidate()
+            stats.completed += 1
+        }
+        else {
+            hintLabel.text = "Something is wrong. 😞"
+        }
+    }
+    var allCorrect = true
+    
+    }
+
+
     
     func setPuzzleNum(label : UILabel, textField: UITextField, str : String) {
         label.text=str
@@ -160,60 +283,3 @@ class HardPuzzleViewController: UIViewController {
                     label.topAnchor.constraint(equalTo: textField.topAnchor)
                 ])
     }
-    
-    @IBAction func hintBtnClicked(_ sender: Any) {
-        stats.hints += 1
-        
-        if (A3.text != "B") {
-            A3.text = "B"
-        }
-        else if (B2.text != "P") {
-            B2.text = "P"
-        }
-        else if (C1.text != "P") {
-            C1.text = "P"
-        }
-        else if (D1.text != "E") {
-            D1.text = "E"
-        }
-        else if (D5.text != "T") {
-            D5.text = "T"
-        }
-        else if (E1.text != "G") {
-            E1.text = "G"
-        }
-        else if (F2.text != "T") {
-            F2.text = "T"
-        }
-        else if (G3.text != "D") {
-            G3.text = "D"
-        }
-        else if (A4.text != "A") {
-            A4.text = "A"
-        }
-        else if (A5.text != "D") {
-            A5.text = "D"
-        }
-        else if (B6.text != "S") {
-            B6.text = "S"
-        }
-        else if (C7.text != "A") {
-            C7.text = "A"
-        }
-        else if (E4.text != "D") {
-            E4.text = "D"
-        }
-        else {
-            statusOL.text = "You have used too many hints."
-        }
-    }
-    
-    @IBAction func checkBtnClicked(_ sender: Any) {
-        if (A3.text == "B" && A4.text == "A" && A5.text == "D" && B2.text == "P" && B3.text == "A" && B4.text == "N" && B5.text == "E" && B6.text == "S" && C1.text == "P" && C2.text == "I" && C3.text == "R" && C4.text == "A" && C5.text == "N" && C6.text == "H" && C7.text == "A" && D1.text == "E" && D2.text == "L" && D3.text == "F" && D5.text == "T" && D6.text == "E" && D7.text == "N" && E1.text == "G" && E2.text == "O" && E3.text == "O" && E4.text == "D" && E5.text == "I" && E6.text == "E" && E7.text == "S" && F2.text == "T" && F3.text == "O" && F4.text == "A" && F5.text == "S" && F6.text == "T" && G3.text == "D" && G4.text == "O" && G5.text == "T") {
-            statusOL.text = "Puzzle complete!"
-        }
-        else {
-            statusOL.text = "Something is wrong!"
-        }
-     }
-}
