@@ -10,9 +10,6 @@ import UIKit
 
 class StatsViewController: UIViewController {
     var name: String = ""
-    var hints: Int = 0
-    var time: Int = 0
-    var completed: Int = 0
 
     
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -32,9 +29,9 @@ class StatsViewController: UIViewController {
             navigationController?.overrideUserInterfaceStyle = .light
         }
         welcomeOL.text = "Hello, " + name
-        hintsOL.text = "Hints Used: " + String(hints)
-        timeOL.text = "Total Time: " + String(time)
-        puzzlesCompletedOL.text = "Puzzles Completed: " + String(completed)
+            hintsOL.text = "Hints Used: " + String(appDelegate.hints)
+            timeOL.text = "Total Time: " + String(appDelegate.time)
+            puzzlesCompletedOL.text = "Puzzles Completed: " + String(appDelegate.completed)
     }
     
 }

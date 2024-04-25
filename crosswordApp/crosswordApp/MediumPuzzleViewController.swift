@@ -84,7 +84,7 @@ class MediumPuzzleViewController: UIViewController {
     
     @IBAction func getHintBtnClick(_ sender: Any) {
         hintLabel.text = hintName
-        stats.hints += 1
+        appDelegate.hints += 1
     }
     
     let stats = StatsViewController()
@@ -97,7 +97,7 @@ class MediumPuzzleViewController: UIViewController {
     @objc func timerAction() {
         counter += 1
         timerOL.text = "\(counter)"
-        stats.time += counter
+        appDelegate.time += counter
     }
     
     func setPuzzleNum(label : UILabel, textField: UITextField, str : String) {
@@ -204,7 +204,7 @@ class MediumPuzzleViewController: UIViewController {
         if (allCorrect == true) {
             hintLabel.text = "You have solved the puzzle! 🤩"
             timer.invalidate()
-            stats.completed += 1
+            appDelegate.completed += 1
         }
         else {
             hintLabel.text = "Something is wrong. 😞"
