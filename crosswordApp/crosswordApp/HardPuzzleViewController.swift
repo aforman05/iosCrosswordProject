@@ -92,6 +92,33 @@ class HardPuzzleViewController: UIViewController {
     
     @IBOutlet weak var statusOL: UILabel!
     
+    @IBOutlet weak var oneLabel: UILabel!
+    
+    @IBOutlet weak var twoLabel: UILabel!
+    
+    
+    @IBOutlet weak var threeLabel: UILabel!
+    
+    @IBOutlet weak var fourLabel: UILabel!
+    
+    @IBOutlet weak var fiveLabel: UILabel!
+    
+    @IBOutlet weak var sixLabel: UILabel!
+    
+    @IBOutlet weak var sevenLabel: UILabel!
+    
+    @IBOutlet weak var eightLabel: UILabel!
+    
+    @IBOutlet weak var nineLabel: UILabel!
+    
+    @IBOutlet weak var tenLabel: UILabel!
+    
+    @IBOutlet weak var elevenLabel: UILabel!
+    
+    @IBOutlet weak var twelveLabel: UILabel!
+    
+    @IBOutlet weak var thirteenLabel: UILabel!
+    
     let stats = StatsViewController()
     
     var answerKey = ["B", "A", "D", "P", "A", "N", "E", "S", "P", "I", "R", "A", "N", "H", "A", "E", "L", "F", "T", "E", "N", "G", "O", "O", "D", "I", "E", "S", "T", "O", "A", "S", "T", "D", "O", "T"]
@@ -108,6 +135,30 @@ class HardPuzzleViewController: UIViewController {
         }
         cluesOL.text = "ACROSS \n 1. Rotten \n 4. Window segments \n 6. Part of school that totally bites? \n 8. 2003 Will Ferrell film \n 9. Approximate percentage of the world's population that is left-handed \n 10. Party bag contents \n 12. Wedding reception speech \n 13. When tripled, symbol of a texter's typing \n \n DOWN \n 1. Wings, nachos, onion rings, etc. \n 2. Actress de Armas \n 3. Canine handler \n 4. Season one, episode one \n 5. Mattress cover \n 6. Place to hang a coat \n 7 The 'A' of Q&A: Abbr \n 11. Philosophy for Laozi"
         
+        setPuzzleNum(label: oneLabel, textField: A3, str: "1")
+        setPuzzleNum(label: twoLabel, textField: A4, str: "2")
+        setPuzzleNum(label: threeLabel, textField: A5, str: "3")
+        setPuzzleNum(label: fourLabel, textField: B2, str: "4")
+        setPuzzleNum(label: fiveLabel, textField: B6, str: "5")
+        setPuzzleNum(label: sixLabel, textField: C1, str: "6")
+        setPuzzleNum(label: sevenLabel, textField: C7, str: "7")
+        setPuzzleNum(label: eightLabel, textField: D1, str: "8")
+        setPuzzleNum(label: nineLabel, textField: D5, str: "9")
+        setPuzzleNum(label: tenLabel, textField: E1, str: "10")
+        setPuzzleNum(label: elevenLabel, textField: E4, str: "11")
+        setPuzzleNum(label: twelveLabel, textField: F2, str: "12")
+        setPuzzleNum(label: thirteenLabel, textField: G3, str: "13")
+
+        
+    }
+    
+    func setPuzzleNum(label : UILabel, textField: UITextField, str : String) {
+        label.text=str
+        label.translatesAutoresizingMaskIntoConstraints = false
+                NSLayoutConstraint.activate([
+                    label.centerXAnchor.constraint(equalTo:textField.leftAnchor, constant: 10),
+                    label.topAnchor.constraint(equalTo: textField.topAnchor)
+                ])
     }
     
     @IBAction func hintBtnClicked(_ sender: Any) {

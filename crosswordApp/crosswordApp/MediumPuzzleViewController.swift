@@ -60,6 +60,25 @@ class MediumPuzzleViewController: UIViewController {
     
     @IBOutlet weak var E3: UITextField!
     
+    @IBOutlet weak var OneLabel: UILabel!
+    
+    @IBOutlet weak var TwoLabel: UILabel!
+    
+    @IBOutlet weak var ThreeLabel: UILabel!
+    
+    @IBOutlet weak var FourLabel: UILabel!
+    
+    @IBOutlet weak var FiveLabel: UILabel!
+    
+    @IBOutlet weak var sixLabel: UILabel!
+    
+    @IBOutlet weak var sevenLabel: UILabel!
+    
+    @IBOutlet weak var stackView: UIStackView!
+    
+    @IBOutlet weak var eightLabel: UILabel!
+    
+    
     let stats = StatsViewController()
     
     let key = ["P", "R", "O", "A", "C", "H", "O", "O", "C", "H", "I", "M", "P", "H", "O", "L", "E", "S", "E", "W", "E"]
@@ -80,6 +99,30 @@ class MediumPuzzleViewController: UIViewController {
         timer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
         
         cluesOL.text = "ACROSS \n 1. In favor of \n 4. Sneeze sound \n 6. Monkey in the middle (of this puzzle) \n 7. What golf courses and bad plots both have \n 8. She-sheep \n DOWN \n 1. Suffix meaning 'lover of' \n 2. Where cacio e pepe is a signature dish \n 3. 'My bad!' \n 4. Feel the pain \n 5. Puppy ____ (homemade snack)"
+        
+        OneLabel.text="1"
+        OneLabel.translatesAutoresizingMaskIntoConstraints = false
+                NSLayoutConstraint.activate([
+                    OneLabel.centerXAnchor.constraint(equalTo: A3.leftAnchor, constant: 10),
+                    OneLabel.topAnchor.constraint(equalTo: A3.topAnchor)
+                ])
+        setPuzzleNum(label: OneLabel, textField: A3, str: "1")
+        setPuzzleNum(label: TwoLabel, textField: A4, str: "2")
+        setPuzzleNum(label: ThreeLabel, textField: A5, str: "3")
+        setPuzzleNum(label: FourLabel, textField: B1, str: "4")
+        setPuzzleNum(label: FiveLabel, textField: B2, str: "5")
+        setPuzzleNum(label: sixLabel, textField: C1, str: "6")
+        setPuzzleNum(label: sevenLabel, textField: D1, str: "7")
+        setPuzzleNum(label: eightLabel, textField: E1, str: "8")
+    }
+    
+    func setPuzzleNum(label : UILabel, textField: UITextField, str : String) {
+        label.text=str
+        label.translatesAutoresizingMaskIntoConstraints = false
+                NSLayoutConstraint.activate([
+                    label.centerXAnchor.constraint(equalTo:textField.leftAnchor, constant: 10),
+                    label.topAnchor.constraint(equalTo: textField.topAnchor)
+                ])
     }
     
     @IBAction func hintBtnClicked(_ sender: Any) {
